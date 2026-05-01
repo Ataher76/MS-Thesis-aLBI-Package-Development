@@ -1,0 +1,49 @@
+ANOVA Summary:
+            Df Sum Sq Mean Sq F value Pr(>F)
+BinLen       4   5.95   1.487   0.068   0.99
+Residuals   10 219.40  21.940               
+
+Tukey HSD Results:
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = as.formula(paste(numeric_var, "~", factor_var)), data = data)
+
+$BinLen
+          diff       lwr      upr     p adj
+2-1  0.6304728 -11.95613 13.21707 0.9998027
+3-1  1.1030935 -11.48351 13.68970 0.9982171
+4-1  0.5108115 -12.07579 13.09741 0.9999145
+5-1  1.8681128 -10.71849 14.45471 0.9867062
+3-2  0.4726207 -12.11398 13.05922 0.9999372
+4-2 -0.1196613 -12.70626 12.46694 0.9999997
+5-2  1.2376400 -11.34896 13.82424 0.9972134
+4-3 -0.5922820 -13.17888 11.99432 0.9998460
+5-3  0.7650193 -11.82158 13.35162 0.9995759
+5-4  1.3573013 -11.22930 13.94390 0.9960233
+
+
+Estimated Marginal Means:
+ BinLen emmean  SE df lower.CL upper.CL
+ 1        45.9 2.7 10     39.9     52.0
+ 2        46.6 2.7 10     40.5     52.6
+ 3        47.0 2.7 10     41.0     53.1
+ 4        46.5 2.7 10     40.4     52.5
+ 5        47.8 2.7 10     41.8     53.8
+
+Confidence level used: 0.95 
+
+Compact Letter Display:
+ BinLen emmean  SE df lower.CL upper.CL .group
+ 1        45.9 2.7 10     39.9     52.0  a    
+ 4        46.5 2.7 10     40.4     52.5  a    
+ 2        46.6 2.7 10     40.5     52.6  a    
+ 3        47.0 2.7 10     41.0     53.1  a    
+ 5        47.8 2.7 10     41.8     53.8  a    
+
+Confidence level used: 0.95 
+P value adjustment: tukey method for comparing a family of 5 estimates 
+significance level used: alpha = 0.05 
+NOTE: If two or more means share the same grouping symbol,
+      then we cannot show them to be different.
+      But we also did not show them to be the same. 

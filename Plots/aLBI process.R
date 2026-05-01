@@ -1,0 +1,44 @@
+
+# install the aLBI package in your rstudio from the CRAN
+
+install.packages("aLBI")
+
+
+library(readxl)
+
+# call the pacakge by library function
+
+library(aLBI)
+
+# load your lenght frequency data
+
+lfq <- read_excel("lfqlsx") 
+
+lfq <- lenfreq01
+
+# call the first function named as FishPar
+
+FishPar(data = lfq, resample = 1000, progress = F)
+
+FishPar(data = lenfreq01, resample = 20000, progress = F)
+
+
+You are all done with the first function and get the values of estimated parameters fron the console
+
+# now for the second function
+
+# load the the from the package 
+
+cpdata <- CPdata
+
+FishSS(data = CPdata, LM_ratio = , Pmat = 46.18, Popt = 31.98, Pobj =110)
+
+
+
+FishSS(data = cpdata,
+       Pmat = 71.582181,
+       Popt = 6.221198,
+       Pobj = 146.3902,
+       LM_ratio = 0.9824056
+)
+
